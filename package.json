@@ -4,7 +4,7 @@
     "description": "Common helper functions for writing awesome unit tests",
     "keywords": [],
     "main": "dist/index.js",
-    "types": "src/index.ts",
+    "types": "dist/index.d.ts",
     "sideEffects": false,
     "homepage": "https://github.com/stoplightio/unit-test-utils",
     "bugs": "https://github.com/stoplightio/unit-test-utils/issues",

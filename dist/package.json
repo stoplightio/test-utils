@@ -1,0 +1,22 @@
+{
+  "name": "@stoplight/unit-test-utils",
+  "version": "0.0.0",
+  "description": "Common helper functions for writing awesome unit tests",
+  "keywords": [],
+  "main": "index.js",
+  "sideEffects": false,
+  "files": [
+    "dist/**/*.js",
+    "!__tests__"
+  ],
+  "author": "Stoplight <support@stoplight.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stoplightio/unit-test-utils.git"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "typings": "index.d.ts"
+}
