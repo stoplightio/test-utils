@@ -1,68 +1,67 @@
 {
-    "name": "@stoplight/unit-test-utils",
-    "version": "0.0.0",
-    "description": "Common helper functions for writing awesome unit tests",
-    "keywords": [],
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "sideEffects": false,
-    "homepage": "https://github.com/stoplightio/unit-test-utils",
-    "bugs": "https://github.com/stoplightio/unit-test-utils/issues",
-    "author": "Stoplight <support@stoplight.io>",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/stoplightio/unit-test-utils.git"
-    },
-    "license": "UNLICENSED",
-    "files": [
-      "dist/**/*.js",
-      "!__tests__"
-    ],
-    "engines": {
-      "node": ">=8.3.0"
-    },
-    "scripts": {
-      "build": "sl-scripts build",
-      "build.docs": "sl-scripts build:tsdoc",
-      "commit": "git-cz",
-      "lint": "sl-scripts lint",
-      "lint.fix": "yarn lint --fix",
-      "release": "sl-scripts release",
-      "release.docs": "sl-scripts release:docs",
-      "release.dryRun": "sl-scripts release --dry-run --debug",
-      "test": "sl-scripts test",
-      "test.prod": "yarn lint && yarn test --coverage --no-cache",
-      "test.update": "yarn test --updateSnapshot",
-      "test.watch": "yarn test --watch"
-    },
-    "lint-staged": {
-      "*.ts": [
-        "yarn lint.fix",
-        "git add"
-      ]
-    },
-    "husky": {
-      "hooks": {
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "pre-commit": "lint-staged"
-      }
-    },
-    "config": {
-      "commitizen": {
-        "path": "node_modules/cz-conventional-changelog"
-      }
-    },
-    "commitlint": {
-      "extends": [
-        "@commitlint/config-conventional"
-      ]
-    },
-    "devDependencies": {
-      "@stoplight/scripts": "1.1.2",
-      "typescript": "3.1.x"
-    },
-    "release": {
-      "extends": "@stoplight/scripts/release"
+  "name": "@stoplight/test-utils",
+  "version": "0.0.0",
+  "description": "Common helper functions for writing awesome unit tests",
+  "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "homepage": "https://github.com/stoplightio/unit-test-utils",
+  "bugs": "https://github.com/stoplightio/unit-test-utils/issues",
+  "author": "Stoplight <support@stoplight.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stoplightio/unit-test-utils.git"
+  },
+  "license": "UNLICENSED",
+  "files": [
+    "dist/**/*.js",
+    "!__tests__"
+  ],
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "scripts": {
+    "build": "sl-scripts build",
+    "build.docs": "sl-scripts build:tsdoc",
+    "commit": "git-cz",
+    "lint": "sl-scripts lint",
+    "lint.fix": "yarn lint --fix",
+    "release": "sl-scripts release",
+    "release.docs": "sl-scripts release:docs",
+    "release.dryRun": "sl-scripts release --dry-run --debug",
+    "test": "sl-scripts test",
+    "test.prod": "yarn lint && yarn test --coverage --no-cache",
+    "test.update": "yarn test --updateSnapshot",
+    "test.watch": "yarn test --watch"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint.fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@stoplight/scripts": "1.1.2",
+    "typescript": "3.1.x"
+  },
+  "release": {
+    "extends": "@stoplight/scripts/release"
   }
-  
+}
